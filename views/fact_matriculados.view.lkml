@@ -688,9 +688,8 @@ view: fact_matriculados {
   }
 
   dimension: valor_pago_detalle {
-    type: number
+    type: string
     sql: ${TABLE}.VALOR_PAGO_DETALLE ;;
-    value_format: "\"COP\"0"
   }
   measure: valor_pago_d {
     type: sum
