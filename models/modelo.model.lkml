@@ -12,7 +12,7 @@ persist_with: tablas_sap_default_datagroup
 
 explore:fact_facturacion{
   join: fact_matriculados {
-    type: left_outer
+    type: full_outer
     sql_on: ${fact_facturacion.solicitante} = ${fact_matriculados.persona_identificacion_actual}
             and ${fact_facturacion.periodo_academico}=${fact_matriculados.periodo_academico}
             and ${fact_facturacion.idprograma}=${fact_matriculados.programa_codigo} ;;
