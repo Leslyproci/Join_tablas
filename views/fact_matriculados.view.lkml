@@ -693,7 +693,7 @@ view: fact_matriculados {
   }
   measure: valor_pago_d {
     type: sum
-    sql: CAST(${valor_pago_detalle} AS FLOAT64);;
+    sql: CAST(${valor_pago_detalle} AS int64);;
   }
 
   measure: count {
