@@ -272,7 +272,7 @@ view: sap_interfaz_recaudo {
    dimension: valorneto {
     type: number
     sql: ${TABLE}.Valorneto ;;
-    value_format: "\"COP\"0"
+    value_format: "\"$\"0"
   }
 
   measure: valor_neto {
