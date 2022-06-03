@@ -276,7 +276,7 @@ view: sap_interfaz_recaudo {
 
   measure: valor_neto {
     type: sum
-    sql: CAST(${valorneto} AS FLOAT64);;
+    sql: CAST(${valorneto} AS int64);;
   }
 
   measure: count {
